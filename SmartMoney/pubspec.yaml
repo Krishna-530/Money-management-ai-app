@@ -1,0 +1,79 @@
+name: smart_budget
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # Firebase dependencies for authentication
+  firebase_core: ^3.0.0
+  firebase_auth: ^5.0.0
+  cloud_firestore: ^5.0.0
+
+  # Local database - DISABLED due to API compatibility issues
+  # sqflite: ^2.3.0
+  # path: ^1.8.3
+  
+  # For password hashing
+  crypto: ^3.0.3
+  
+  # For secure local storage - DISABLED
+  # flutter_secure_storage: ^9.0.0
+
+  # For charts (pie charts, bar charts, etc)
+  fl_chart: ^0.68.0
+
+  # For system-level notifications
+  flutter_local_notifications: ^17.1.2
+  shared_preferences: ^2.5.4
+  path_provider: ^2.1.5
+  share_plus: ^12.0.1
+  local_auth: ^2.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+  flutter_native_splash: ^2.4.4
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/app_logo.jpg"
+  min_sdk_android: 21
+
+flutter_native_splash:
+  color: "#0F172A"
+  image: assets/transparent.png
+  android: true
+  ios: true
+  fullscreen: true
+  android_12:
+    image: assets/transparent.png
+    color: "#0F172A"
+    icon_backgroundColor: "#0F172A"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/college_logo.jpg
+    - assets/app_logo.jpg
+    - assets/transparent.png
+
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic

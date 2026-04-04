@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "505344490560",
+    "project_id": "pardhu-flutter",
+    "storage_bucket": "pardhu-flutter.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:505344490560:android:f0da4a89d6af1c946bb3a5",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1M_RXcO8y6x-mfg2tHmdTyzWUc7zR2Mk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
