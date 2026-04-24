@@ -16,7 +16,6 @@ class IntroScreen extends StatelessWidget {
     return Scaffold(
       body: Container(
         decoration: const BoxDecoration(
-          // Clean, modern, professional dark blue gradient
           gradient: LinearGradient(
             colors: [Color(0xFF0F172A), Color(0xFF1E3A8A)],
             begin: Alignment.topCenter,
@@ -26,7 +25,6 @@ class IntroScreen extends StatelessWidget {
         child: SafeArea(
           child: Column(
             children: [
-              // ── Scrollable content ──
               Expanded(
                 child: SingleChildScrollView(
                   padding: const EdgeInsets.symmetric(
@@ -36,7 +34,7 @@ class IntroScreen extends StatelessWidget {
                     children: [
                       const SizedBox(height: 24),
 
-                      // Elegant, professional icon
+                      // Logo
                       Container(
                         padding: const EdgeInsets.all(20),
                         decoration: BoxDecoration(
@@ -62,9 +60,9 @@ class IntroScreen extends StatelessWidget {
 
                       const SizedBox(height: 28),
 
-                      // Main Title
+                      // Title
                       const Text(
-                        'Smart Budget\nAnalyser',
+                        'SmartBudget AI',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 32,
@@ -77,33 +75,28 @@ class IntroScreen extends StatelessWidget {
 
                       const SizedBox(height: 12),
 
-                      // Subtitle
                       const Text(
-                        'A new way to track your money.',
+                        'A simple way to track your money',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 16,
-                          fontWeight: FontWeight.w400,
-                          letterSpacing: 0.5,
                           color: Color(0xFF93C5FD),
                         ),
                       ),
 
                       const SizedBox(height: 32),
 
-                      // Smooth Divider
                       Container(
                         width: 60,
                         height: 3,
                         decoration: BoxDecoration(
-                          color: const Color(0xFF3B82F6),
+                          color: Color(0xFF3B82F6),
                           borderRadius: BorderRadius.circular(2),
                         ),
                       ),
 
                       const SizedBox(height: 28),
 
-                      // Department Info
                       const Text(
                         'PRESENTED BY',
                         style: TextStyle(
@@ -113,7 +106,9 @@ class IntroScreen extends StatelessWidget {
                           color: Color(0xFF94A3B8),
                         ),
                       ),
+
                       const SizedBox(height: 8),
+
                       const Text(
                         'Department of Computer Science\nDTI Project',
                         textAlign: TextAlign.center,
@@ -127,7 +122,7 @@ class IntroScreen extends StatelessWidget {
 
                       const SizedBox(height: 28),
 
-                      // Clean Student List
+                      // ✅ Clean Student Section
                       Container(
                         width: double.infinity,
                         padding: const EdgeInsets.symmetric(
@@ -138,39 +133,8 @@ class IntroScreen extends StatelessWidget {
                         ),
                         child: Column(
                           children: [
-                            _buildStudentRow('S. Pardhu Krishna', '5231411156'),
-                            Padding(
-                              padding:
-                                  const EdgeInsets.symmetric(vertical: 8.0),
-                              child: Divider(
-                                  color: Colors.white.withOpacity(0.1),
-                                  thickness: 1),
-                            ),
-                            _buildStudentRow('R. Durga Prasad', '5231411145'),
-                            Padding(
-                              padding:
-                                  const EdgeInsets.symmetric(vertical: 8.0),
-                              child: Divider(
-                                  color: Colors.white.withOpacity(0.1),
-                                  thickness: 1),
-                            ),
-                            _buildStudentRow('V. Harish', '5231411177'),
-                            Padding(
-                              padding:
-                                  const EdgeInsets.symmetric(vertical: 8.0),
-                              child: Divider(
-                                  color: Colors.white.withOpacity(0.1),
-                                  thickness: 1),
-                            ),
-                            _buildStudentRow('R. Srinu', '5231411142'),
-                            Padding(
-                              padding:
-                                  const EdgeInsets.symmetric(vertical: 8.0),
-                              child: Divider(
-                                  color: Colors.white.withOpacity(0.1),
-                                  thickness: 1),
-                            ),
-                            _buildStudentRow('R. Karthik', '5231411147'),
+                            _buildStudentRow(
+                                'S. Pardhu Krishna', '5231411156'),
                           ],
                         ),
                       ),
@@ -181,7 +145,7 @@ class IntroScreen extends StatelessWidget {
                 ),
               ),
 
-              // ── Sticky bottom button (always visible) ──
+              // Bottom Button
               Padding(
                 padding: const EdgeInsets.fromLTRB(32, 12, 32, 24),
                 child: Column(
@@ -215,7 +179,9 @@ class IntroScreen extends StatelessWidget {
                         ),
                       ),
                     ),
+
                     const SizedBox(height: 12),
+
                     const Text(
                       'Project Guide: Mr. Sri T. SriKrishna',
                       style: TextStyle(
@@ -255,7 +221,6 @@ class IntroScreen extends StatelessWidget {
             textAlign: TextAlign.right,
             style: TextStyle(
               fontSize: 13,
-              fontWeight: FontWeight.w500,
               color: Colors.white.withOpacity(0.7),
             ),
           ),
